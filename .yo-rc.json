@@ -44,7 +44,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Category", "Store", "Product"],
+    "lastLiquibaseTimestamp": 1634772739000
   },
   "git-provider": "GitHub",
   "git-company": "alexandrenilton",

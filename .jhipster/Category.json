@@ -1,0 +1,34 @@
+{
+  "name": "Category",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateAdded",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateModified",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "CategoryStatus",
+      "fieldValues": "AVAILABLE,RESTRICTED,DISABLED"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "category",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211020233217"
+}

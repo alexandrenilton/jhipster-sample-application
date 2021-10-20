@@ -1,0 +1,48 @@
+{
+  "name": "Product",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "keywords",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateAdded",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateModified",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "store",
+      "otherEntityRelationshipName": "product",
+      "relationshipName": "store"
+    }
+  ],
+  "entityTableName": "product",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211020233219"
+}
